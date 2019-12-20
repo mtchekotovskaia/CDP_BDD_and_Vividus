@@ -1,9 +1,11 @@
+Description: Task 2
+
 Lifecycle:
 Examples:
 |firstName                     |lastName                     |password                      |
 |#{generate(Address.firstName)}|#{generate(Address.lastName)}|#{generate(Internet.password)}|
 
-Scenario: [Task 2] Sign In
+Scenario: Sign In
 GivenStories: story/precondition/SignUp.story
 Given I am on the main application page
 When I click on a link with the URL '/login'
@@ -26,4 +28,3 @@ Meta:
 When I click on an element by the xpath '//button[@data-test-id='header-member-menu-button']'
 When I click on an element by the xpath '//a[@data-test-id='header-member-menu-profile']'
 Then the text '<firstName> <lastName>' exists
-Then the text '<firstName>_<lastName>@ugly.email' exists

@@ -4,7 +4,7 @@ Scenario: Verify registration form
 Meta:
 @layout desktop
 Given I am on the main application page
-When I enter '<firstName><lastName>@ugly.email' in a field by the xpath '//*[@name='email']'
+When I enter '<firstName>_<lastName>@ugly.email' in a field by the xpath '//*[@name='email']'
 When I click on a button with the name 'submit'
 When I enter '<firstName> <lastName>' in a field by the xpath '//*[@name='name']'
 When I enter '<password>' in a field by the xpath '//*[@id='password']'
