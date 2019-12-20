@@ -1,2 +1,8 @@
 {
+	"EPM-3180": {
+		"type": "Internal",
+		"assertionPattern": ".*The number of found elements.*",
+		"storyPattern": "Task4.*",
+		"scenarioPattern": ".*Known issue.*"
+		}
 }
